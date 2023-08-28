@@ -95,5 +95,8 @@ public class UserServiceImpl implements UserService{
         forgotPasswordResponse.setAccessToken(accessToken);
         return forgotPasswordResponse;
     }
+    public void findUser (String email){
+        userRepository.findUserByEmail(email);
+    }
 
 }
